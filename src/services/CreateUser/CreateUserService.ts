@@ -3,7 +3,7 @@ import { IMailProvider } from '../../providers/MailProvider'
 import { IUsersRepository } from '../../repositories/UserRepository'
 import { ICreateUserRequestDto } from './CreateUserDto'
 
-export class Createuser {
+export class CreateUserService {
 	constructor(
 		private usersRepository: IUsersRepository,
 		private mailProvider: IMailProvider

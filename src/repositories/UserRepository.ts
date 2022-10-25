@@ -7,7 +7,7 @@ export interface IUsersRepository {
 
 	saveUser(user: User): Promise<User>
 
-	updateUser(user: User): Promise<User>
+	updateUser(id: string, user: Partial<User>): Promise<User>
 
 	deleteUser(id: string): Promise<void>
 
